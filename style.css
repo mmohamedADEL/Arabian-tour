@@ -1,0 +1,22 @@
+
+
+
+	
+	#header {
+		text-align: center;
+		color: blue;
+		font-size: 24px;
+	}
+    .row > div:nth-child(odd) {
+        background-color: lightblue; /* Background color for odd columns */
+    }
+
+    .row > div:nth-child(even) {
+        background-color: lightgreen; /* Background color for even columns */
+    }
+
+    .row > div {
+        padding: 30px; /* Add padding for better visibility */
+        text-align: center; /* Center-align text for clarity */
+    }
+

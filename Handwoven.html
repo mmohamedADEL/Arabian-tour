@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Page</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  
+
+</body>
+</html>
+
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .background {
+      position: relative;
+      background: url('karpet.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+    .title {
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: orange; /* Set title color to orange */
+    }
+    .caption {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between; /* Aligns children in the caption */
+      align-items: center; /* Centers items vertically */
+    }
+    .caption .btn-primary {
+      font-size: 1.25rem;
+      margin-left: auto; /* Pushes button to the right */
+    }
+  </style>
+</head>
+<body>
+
+<div class="background">
+  <!-- Title at Top Left -->
+  <div class="title">
+    Discover Handwoven Silk Carpets in Egypt
+  </div>
+
+  <!-- Caption with Button on Right Side -->
+  <div class="caption">
+    <pre><b>Join us on a captivating journey through Egypt, where we will explore the art of handwoven silk carpets.
+      This unique tour takes you to a renowned silk carpet factory, where skilled artisans transform threads into exquisite works of art.
+      Learn about the intricate techniques and rich history behind these beautiful carpets while witnessing the craftsmanship firsthand. Experience the vibrant colors,
+      unique patterns, and cultural significance of these treasures, making this an unforgettable cultural adventure.</b></pre>
+    <a href="booking.html" class="btn btn-primary" target="_top">Book Now</a>
+  </div>
+</div>
+
+</body>
+</html>

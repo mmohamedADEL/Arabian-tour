@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Egypt</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Full-screen video background */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay container for title */
+    .overlay-content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* Optional dark overlay for better text visibility */
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: orange; /* Title color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="video-background" autoplay muted loop>
+    <source src="egypt-discover.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Title Overlay -->
+  <div class="overlay-content">
+    <h1>Discover Egypt</h1>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Arabian Tour</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+		.navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #007bff; /* Change as needed */
+        }
+        .nav-item a {
+            color: #6c757d; /* Change as needed */
+        }
+        .nav-item a:hover {
+            color: #007bff; /* Change as needed */
+        }
+        .btn-custom {
+            background-color: #007bff; /* Change as needed */
+            color: white;
+        }
+        .navbar-nav {
+            flex-grow: 1; /* Allows nav items to take up remaining space */
+            justify-content: center; /* Center align nav items */
+        }
+        .nav-item {
+            margin: 0 15px; /* Adjust the space between items */
+        }
+        .logo {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            margin-right: 10px; /* Space between logo and brand name */
+        }
+        
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section img {
+			align : right
+            width: 120px;
+            height: 120px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+<!-- NVbar-->
+<div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="homeLogo-Photoroom.png" class="logo" alt="logo">Arabian<span style="color: orange;">tour</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="cards.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="cards.html">All Destinations</a></li>
+							<li><a class="dropdown-item" href="EgyTrips.html">Egypt</a></li>
+							<li><a class="dropdown-item" href="soon.html">UAE</a></li>
+							<li><a class="dropdown-item" href="palestine.html">Palestine</a></li>
+							<li><a class="dropdown-item" href="soon.html">Morocco</a></li>
+							<li><a class="dropdown-item" href="soon.html">Saudi Arabia</a></li>
+							<li><a class="dropdown-item" href="soon.html">Qatar</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="discover.html">Discovery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="booking.html">Reservation</a>
+					</li>
+				</ul>
+				<a href="Contact.html" class="btn btn-custom">Contact Us</a>
+			</div>
+		</div>
+	</nav>
+	<br><br><br><br>
+</div>
+<!-- Embedded Google Map -->
+	 <div class="container my-5">
+		<div class="office-container p-4 rounded shadow bg-light text-warning">
+			<h2 id="top" class="heading-style bg-primary text-center fw-bold">Our Office: Only in <strong> Egypt </strong> Now</h2>
+			<p class="paragraph-style text-center text-warning">
+				<b>Coming soon in all Arab countries: <strong>Dubai, Jeddah</strong>, and <strong>Qatar</strong></b>
+			</p>
+			<div class="map-container mt-4">
+				
+				<iframe 
+					class="map-style w-100 rounded border border-warning" 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.577185514072!2d31.20133716605074!3d30.02799916094372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458478edeca5f99%3A0xfda48681d55fd9be!2sCreativa%20Innovation%20Hub%20-%20Giza!5e0!3m2!1sen!2seg!4v1734353089918!5m2!1sen!2seg" 
+					width="600" 
+					height="450" 
+					style="border:0;" 
+					allowfullscreen="" 
+					loading="lazy" 
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</div>
+	</div>
+<!--sections div -->
+    <div class="container mt-4">
+		<!-- Section: Who I Am -->
+		<div class="section">
+			<div>
+				<h2>Who I Am</h2>
+				<p>My name is [Your Name], and I am the founder of Arabian Tour. With a passion for travel and a deep love for Egyptian culture, I created this platform to share the beauty and richness of our heritage with travelers from around the world. I have spent years exploring every corner of Egypt, and I am excited to help you experience our wonderful destinations.</p>
+			</div>
+			<img src="whoIam.jpg" alt="Who I Am">
+		</div>
+
+		<!-- Section: Our Mission -->
+		<div class="section">
+			<div>
+				<h2>Our Mission</h2>
+				<p>At Arabian Tour, our mission is to provide travelers with authentic experiences that showcase the unique culture, history, and natural beauty of Egypt. We aim to connect visitors with local communities, offering a range of services that promote sustainable tourism and cultural exchange.</p>
+			</div>
+			<img src="our-mission.jpg" alt="Our Mission">
+		</div>
+
+		<!-- Section: Our Vision -->
+		<div class="section">
+			
+			<div>
+				<h2>Our Vision</h2>
+				<p>We envision a world where travelers can immerse themselves in the beauty of Egyptian culture, fostering understanding and appreciation between diverse communities. Our goal is to be a leader in the tourism industry, promoting responsible travel practices and creating memorable experiences for all who visit.</p>
+			</div>
+			<img src="vission.jpg" alt="Our Vision">
+		</div>
+	</div>
+<!--footer div -->
+<div class="bg-secondary text-light">
+	<footer>
+		<table style="width: 100%; border-collapse: collapse;">
+			<tr>
+				<td rowspan="3" style="text-align: center; font-weight: bold; font-size: 24px;">
+					   Arabian<span style="color: orange;">tour</span>
+				
+					<div style="margin-top: 10px;">
+						<h3 style="font-size: 18px; margin-bottom: 5px;">Join Us</h3>
+						<a href="https://www.facebook.com/profile.php?id=100005164508211" style="margin-right: 10px;">
+							<img src="facebook.png"  style="width: 30px; height: 30px;">
+						</a>
+						<a href=https://www.instagram.com/mo.adel.8901/ style="margin-right: 10px;">
+							<img src="instagram.jpg"  style="width: 30px; height: 30px;">
+						</a>
+						<a href="http://www.linkedin.com/in/mohamed-adel-elbaz-79239a272">
+							<img  src="linkedin.png"   style="width: 30px; height: 30px;">
+						</a>
+					</div>
+			</td>
+			</tr>
+			
+			<tr>
+			<td style="vertical-align: top; padding: 10px;">
+				<strong>Destinations</strong><br>
+				<a href="EgyTrips.html" style="color: white;">Egypt</a><br>
+				<a href= "Palestine.html" style="color: white;">Palestine</a><br>
+				<a href="soon.html" style="color: white;">UAE</a><br>
+				<a href="soon.html" style="color: white;">Morocco</a><br>
+				<a href="soon.html" style="color: white;">Saudi Arabia</a><br>
+				<a href="soon.html" style="color: white;">Jordan</a>
+			</td>
+			<td style="vertical-align: top; padding: 10px;">
+				<strong>Services</strong><br>
+				<a href="discover.html" style="color: white;">Discovery</a><br>
+				<a href="booking.html" style="color: white;">Reservation</a><br>
+			</td>
+			<td style="vertical-align: top; padding: 10px;">
+				<strong>Site Map</strong><br>
+				<a href="about.html" style="color: white;">About</a><br>
+				<a href="cards.html" style="color: white;">Destinations</a><br>
+				<a href="soon.html" style="color: white;">News</a><br>
+				<a href="discover.html" style="color: white;">Discovery</a><br>
+				<a href="Contact.html" style="color: white;">Contact Us</a>
+			</td>
+			</tr>
+		</table>			
+	</footer>
+</div>
+
+<!-- Bootstrap Bundle JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
