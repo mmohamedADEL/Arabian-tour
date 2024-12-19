@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="parters" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Page</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .background {
+      position: relative;
+      background: url('reef.Jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+    .title {
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: orange; /* Set title color to orange */
+    }
+    .caption {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between; /* Aligns children in the caption */
+      align-items: center; /* Centers items vertically */
+    }
+    .caption .btn-primary {
+      font-size: 1.25rem;
+      margin-left: auto; /* Pushes button to the right */
+    }
+  </style>
+</head>
+<body>
+
+<div class="background">
+  <!-- Title at Top Left -->
+  <div class="title">
+  Experience Authentic Rural Life
+  </div>
+
+  <!-- Caption with Button on Right Side -->
+  <div class="caption">
+    <pre><b>invites you to immerse yourself in Egypt's agricultural traditions.Spend a full day working alongside local farmers,
+participating in activities like planting and harvesting, and enjoying a delicious farm-to-table meal.
+Experience the authentic lifestyle and rich culture of rural Egypt while gaining insight into the hard work behind farming.
+Do not miss this unique opportunity!</b></pre>
+    <a href="booking.html" class="btn btn-primary" target="_top">Book Now</a>
+  </div>
+</div>
+
+</body>
+</html>

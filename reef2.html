@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Egypt</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Full-screen video background */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay container for title and buttons */
+    .overlay-content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
+      color: white;
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Add some padding */
+    }
+
+    h1 {
+      font-size: 3rem; /* Adjusted size for better placement */
+      font-weight: bold;
+      color: orange; /* Title color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    }
+
+    p {
+      font-size: 1rem; /* Small paragraph size */
+      color: white; /* Paragraph color */
+    }
+
+    .button-container {
+      position: absolute;
+      bottom: 20px; /* Positioning at the bottom */
+      right: 20px; /* Positioning at the right */
+    }
+
+    .btn-book {
+      background-color: orange; /* Button color */
+      color: white; /* Text color */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="video-background" autoplay muted loop>
+    <source src="reef2.mp4" type="video/mp4">
+    <source src="reef2.mp4" type="video/webm"> <!-- Added WebM format for compatibility -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Title Overlay -->
+  <div class="overlay-content">
+    <h1>Experience Authentic Rural Life</h1>
+  <p>Invites you to immerse yourself in Egypt's agricultural traditions.Spend a full day working alongside local farmers,
+    participating in activities like planting and harvesting, and enjoying a delicious farm-to-table meal.
+    Experience the authentic lifestyle and rich culture of rural Egypt while gaining insight into the hard work behind farming.
+    Do not miss this unique opportunity!</p>
+
+    
+    <!-- Button container -->
+    <div class="button-container">
+      <a href="booking.html" class="btn btn-book" target="_top">Book Now</a> <!-- "Book Now" button -->
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

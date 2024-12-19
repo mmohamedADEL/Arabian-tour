@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="parters" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Page</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .background {
+      position: relative;
+      background: url('teen.Jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+    .title {
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: orange; /* Set title color to orange */
+    }
+    .caption {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between; /* Aligns children in the caption */
+      align-items: center; /* Centers items vertically */
+    }
+    .caption .btn-primary {
+      font-size: 1.25rem;
+      margin-left: auto; /* Pushes button to the right */
+    }
+  </style>
+</head>
+<body>
+
+<div class="background">
+  <!-- Title at Top Left -->
+  <div class="title">
+   Experience a Day with Egyptian Potters
+  </div>
+
+  <!-- Caption with Button on Right Side -->
+  <div class="caption">
+    <p>Experience the rich tradition of Egyptian pottery in a hands-on day with skilled artisans.
+	Learn the time-honored techniques of crafting clay, discover the cultural significance behind each piece,
+	and create your own pottery. This immersive journey offers a unique insight into the artistry and heritage of Egypt,
+	perfect for craft enthusiasts and those curious about local culture.</p>
+    <a href="booking.html" class="btn btn-primary" target="_top">Book Now</a>
+  </div>
+</div>
+
+</body>
+</html>

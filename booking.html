@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <style>
+            .navbar-brand {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: #007bff; /* Change as needed */
+            }
+            .nav-item a {
+                color: #6c757d; /* Change as needed */
+            }
+            .nav-item a:hover {
+                color: #007bff; /* Change as needed */
+            }
+            .btn-custom {
+                background-color: #007bff; /* Change as needed */
+                color: white;
+            }
+            .navbar-nav {
+                flex-grow: 1; /* Allows nav items to take up remaining space */
+                justify-content: center; /* Center align nav items */
+            }
+            .nav-item {
+                margin: 0 15px; /* Adjust the space between items */
+            }
+            .logo {
+                width: 50px; /* Adjust size as needed */
+                height: 50px; /* Adjust size as needed */
+                margin-right: 10px; /* Space between logo and brand name */
+            }
+            .text-center{
+                margin: 15px;
+            }
+            .centered-text{
+                text-align: center;
+                position: lift;
+                width: 80%; /* Controls the paragraph width */
+            }
+
+            
+            .button {
+                position: relative;
+                background-color: #2889EE;
+                border: none;
+                font-size: 15px;
+                color: #FFFFFF;
+                padding: 5px;
+                width: 70px;
+                text-align: center;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .button:after {
+                content: "";
+                background: #31CAF4;
+                display: block;
+                position: absolute;
+                padding-top: 300%;
+                padding-left: 350%;
+                margin-left: -20px!important;
+                margin-top: -120%;
+                opacity: 0;
+                transition: all 0.8s
+            }
+           .button:active:after {
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                transition: 0s
+            }
+            .button_next span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            .button_next span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+            .button_next span {
+                padding-right: 25px;
+            }
+            .button_next:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .button_next {
+                pointer-events: none;
+                opacity: 0.5; 
+            }
+            input[type="checkbox"]:checked ~ button {
+                pointer-events: auto;
+                opacity: 1;
+            }
+            .container_book {
+                width: 40%;
+                background-color: #f2f2f2;
+                padding: 5px 20px 15px 20px;
+                border: 1px solid lightgrey;
+                border-radius: 3px;
+            }
+            </style>
+    </head>
+
+    <body>
+       <!-- NVbar-->
+	<div>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-3">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="homeLogo-Photoroom.png" class="logo" alt="logo">Arabian<span style="color: orange;">tour</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="cards.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="cards.html">All Destinations</a></li>
+								<li><a class="dropdown-item" href="EgyTrips.html">Egypt</a></li>
+								<li><a class="dropdown-item" href="soon.html">UAE</a></li>
+								<li><a class="dropdown-item" href="palestine.html">Palestine</a></li>
+								<li><a class="dropdown-item" href="soon.html">Morocco</a></li>
+								<li><a class="dropdown-item" href="soon.html">Saudi Arabia</a></li>
+								<li><a class="dropdown-item" href="soon.html">Qatar</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="discover.html">Discovery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="booking.html">Reservation</a>
+						</li>
+					</ul>
+					<a href="Contact.html" class="btn btn-custom">Contact Us</a>
+				</div>
+			</div>
+		</nav>
+		<br><br><br><br>
+	</div>
+
+        <!-- Form -->
+         <br>
+        <center><div class="container_book">
+        <table align="center" valign="center" width="100%" style="border: 0px solid #2889EE; border-radius: 12px; padding: 10px;">
+            <form method="post">
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" placeholder="Enter First Name" id="firstname" name="firstname">
+                            <label for="firstname">First Name</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" placeholder="Enter Last Name" id="lastname" name="lastname">
+                            <label for="lastname">Last Name</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="number" class="form-control" placeholder="Enter Mobile Number" id="mobile" name="mobile">
+                            <label for="mobile">Mobile Number</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="number" class="form-control" placeholder="Enter Phone Number" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" checked> Male 
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                            <label for="email">Email</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="date" class="form-control" placeholder="Date Of Birth" id="dob" name="dob">
+                            <label for="dob">Date Of Birth</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ID Number</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="number" class="form-control" placeholder="Enter ID Number" id="id" name="id">
+                            <label for="id">ID Number</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trip</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <select class="form-select" class="form-control" placeholder="Enter Trip Type" id="trip" name="trip">
+                                <option>Pharonic</option>
+                                <option>Islamic</option>
+                                <option>Resort</option>
+                            </select>
+                            <label for="trip" class="form-label">Trip:</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Members</td>
+                    <td>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="members" id="single" value="single" checked>
+                            <label class="form-check-label" for="members">Single</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="members" id="family" value="family">
+                            <label class="form-check-label" for="family">Family</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="members" id="group" value="group">
+                            <label class="form-check-label" for="group">Group</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start Of Trip</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="date" class="form-control" placeholder="Enter Start Of Trip" id="sot" name="sot">
+                            <label for="eot">Start Of Trip</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>End Of Trip</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="date" class="form-control" placeholder="Enter End Of Trip" id="eot" name="eot">
+                            <label for="eot">End Of Trip</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Special Requests</td>
+                    <td>
+                        <div class="form-floating mb-3 mt-3">
+                            <textarea class="form-control" id="requests" name="requests"></textarea>
+                            <label for="requests">Special Requests</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <button type="reset" class="button btn btn-primary">Reset</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terms & Conditions</td>
+                    <td>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="unlockCheckbox" name="TermsCondition" value="TermsCondition">
+                            <label for="unlockCheckbox" class="form-check-label">I Have Read The Terms And Conditions</label>
+                            <button onclick="document.location='booking2.html'" type="reset" class="button btn btn-primary button_next" id="actionButton"><span>Next</span></button>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+            </form>
+        </table></div></center>
+        <br>
+
+        <!--footer div -->
+    <div class="bg-secondary text-light">
+		<footer>
+			<table style="width: 100%; border-collapse: collapse;">
+				<tr>
+					<td rowspan="3" style="text-align: center; font-weight: bold; font-size: 24px;">
+						   Arabian<span style="color: orange;">tour</span>
+					
+						<div style="margin-top: 10px;">
+							<h3 style="font-size: 18px; margin-bottom: 5px;">Join Us</h3>
+							<a href="https://www.facebook.com/profile.php?id=100005164508211" style="margin-right: 10px;">
+								<img src="facebook.png"  style="width: 30px; height: 30px;">
+							</a>
+							<a href=https://www.instagram.com/mo.adel.8901/ style="margin-right: 10px;">
+								<img src="instagram.jpg"  style="width: 30px; height: 30px;">
+							</a>
+							<a href="http://www.linkedin.com/in/mohamed-adel-elbaz-79239a272">
+								<img  src="linkedin.png"   style="width: 30px; height: 30px;">
+							</a>
+						</div>
+				</td>
+				</tr>
+				
+				<tr>
+				<td style="vertical-align: top; padding: 10px;">
+					<strong>Destinations</strong><br>
+					<a href="EgyTrips.html" style="color: white;">Egypt</a><br>
+					<a href= "Palestine.html" style="color: white;">Palestine</a><br>
+					<a href="soon.html" style="color: white;">UAE</a><br>
+					<a href="soon.html" style="color: white;">Morocco</a><br>
+					<a href="soon.html" style="color: white;">Saudi Arabia</a><br>
+					<a href="soon.html" style="color: white;">Jordan</a>
+				</td>
+				<td style="vertical-align: top; padding: 10px;">
+					<strong>Services</strong><br>
+					<a href="discover.html" style="color: white;">Discovery</a><br>
+					<a href="booking.html" style="color: white;">Reservation</a><br>
+				</td>
+				<td style="vertical-align: top; padding: 10px;">
+					<strong>Site Map</strong><br>
+					<a href="about.html" style="color: white;">About</a><br>
+					<a href="cards.html" style="color: white;">Destinations</a><br>
+					<a href="soon.html" style="color: white;">News</a><br>
+					<a href="discover.html" style="color: white;">Discovery</a><br>
+					<a href="Contact.html" style="color: white;">Contact Us</a>
+				</td>
+				</tr>
+			</table>			
+		</footer>
+	</div>
+
+        <!-- Bootstrap Bundle JS -->
+        <script src="bootstrap.bundle.min.js"></script>
+    </body>
+</html>

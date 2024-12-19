@@ -1,0 +1,74 @@
+<style>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #007bff; /* Change as needed */
+        }
+        .nav-item a {
+            color: #6c757d; /* Change as needed */
+        }
+        .nav-item a:hover {
+            color: #007bff; /* Change as needed */
+        }
+        .btn-custom {
+            background-color: #007bff; /* Change as needed */
+            color: white;
+        }
+        .navbar-nav {
+            flex-grow: 1; /* Allows nav items to take up remaining space */
+            justify-content: center; /* Center align nav items */
+        }
+        .nav-item {
+            margin: 0 15px; /* Adjust the space between items */
+        }
+        .logo {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            margin-right: 10px; /* Space between logo and brand name */
+        }
+		.text-center{
+			margin: 15px;
+		}
+		.centered-text{
+		text-align: center;
+		position: lift;
+		width: 80%; /* Controls the paragraph width */
+}
+		
+	.content-wrapper {
+		text-align: center; 
+		margin: 0 auto; 
+		max-width: 800px; 
+	}
+
+	.content-wrapper img {
+		width: 60%; 
+		max-width: 700px; 
+		height: auto; 
+		border-radius: 10px; /* Optional: adds rounded corners to the image */
+		margin: 20px auto; /* Adds spacing around the image */
+	}
+
+	.content-wrapper h2 {
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.content-wrapper p {
+		margin-bottom: 20px;
+		font-size: 1.2rem; /* Adjusts font size */
+		line-height: 1.6; /* Improves readability */
+	}
+
+	.grand {
+		width: 100%; /* Set the width to fill the page */
+		padding: 10px; /* Adds internal spacing */
+		text-align: left; /* Aligns the text inside the div to the left */
+	}
+	.content-left {
+        padding-left: 100px; /* Adds space from the border */
+        text-align: left; /* Ensures text starts from the left */
+        font-weight: bold; /* Makes text bold instead of using <b> */
+    }
+
+</style>
